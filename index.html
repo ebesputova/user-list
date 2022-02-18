@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список пользователей</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
+    <script src="https://unpkg.com/inputmask@5.0.8-beta.7/dist/inputmask.js"></script>
+  </head>
+  <body>
+    <div class="newUser">
+      <h2 class="newUser__title">Добавить нового пользователя</h2>
+      <form class="newUser__form">
+        <fieldset class="newUser__fieldset">
+            <label class="newUser__field">
+                <span class="newUser__label">Имя</span>
+                <input type="text" class="newUser__input" name="name"/>
+            </label>
+            <label class="newUser__field">
+                <span class="newUser__label">Телефон</span>
+                <input type="text" class="newUser__input" name="phone" />
+            </label>
+          <button class="btn btn--submit newUser__submit" type="submit">Добавить</button>
+        </fieldset>
+      </form>
+      <ul class="usersList"></ul>
+  </body>
+  <script src="./index.js"></script>
+</html>
